@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #container {
+      width: 375px;
+      min-height: 667px;
+      margin: 0px auto;
+      text-align: center;
+      background: white;
+      position: relative;
+      overflow: auto;
+      border: 1px solid black;
+      
+      
+    }
+    #header{
+      background-color: black;
+      border-bottom:1px solid white;
+    }
+    #logo {
+      width: 350px;
+      height: 81px;
+      flex-shrink: 0;
+      margin-bottom:10px;
+    }
+    #search{
+      width: 390px;
+      height: 40px;
+      flex-shrink: 0;
+    }
+    #main{
+      width: 375px;
+      height: 580px;
+      background-color: black;
+      color:white;
+      display: flex;
+      flex-direction: column;
+     
+  
+    }
+    
+    .board-section1{
+      width: 375px;
+      height: 270px;
+      
+      border-bottom:1px solid white;
+    }
+    .board-section2{
+      width: 375px;
+      height: 250px;
+    }
+    .board-writer{
+      font-size :20px;
+      margin-top:15px;
+      margin-bottom:15px;
+    }
+    .b-p-image {
+      width:90px;
+      height: 90px;
+      margin-bottom:15px;
+    }
+    .board-date{
+      font-size :15px;
+      margin-bottom:5px;
+    }
+    .board-title{
+      font-size:25px;
+      margin-bottom:5px;
+    }
+    .board-sport{
+      font-size :15px;
+      margin-bottom:20px;
+    }
+    .board-gender{
+      margin-bottom:5px;
+    }
+    .board-area{
+      margin-bottom:5px;
+    }
+    .board-people{
+      margin-bottom:5px;
+    }
+    .board-content{
+      width: 275px;
+      height:100px;
+      border: 2px solid #FFF;
+      border-radius: 10px;
+  
+      margin-top:10px;
+      margin-bottom:20px;
+      margin-right:50px;
+      margin-left:50px;
+    }
+
+    
+     
+
+    
+    .detail-btn{
+    width: 150px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #C2AC18;
+   }
+  </style>
+  
+  <body>
+    <div id="container">
+      <div id ="header">
+        <div id ="logo"> 
+            <img src="images\image 1.png">
+        </div> 
+      </div>
+      <div id="main">
+        
+          <div class="board-section1">
+            <div class="board-writer">김이박</div>
+            <div class="board-profile"><img class="b-p-image" src="images/profile.png"></div>
+          
+            <div class="board-date">2023-9-18</div>
+            <div class="board-title">아침 수영</div>
+            <div class="board-sport">수영</div>
+          </div>
+          <div class="board-section2">
+            <div class="board-gender">여자</div>
+            <div class="board-area">서울시 노원구</div>
+            <div class="board-people">2명</div>
+            <div class="board-content">수영 같이해요</div>
+            <button class="detail-btn" type="submit" >신청하기</button>
+          </div>
+        
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

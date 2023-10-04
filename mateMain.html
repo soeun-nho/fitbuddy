@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>운동매칭 게시글 목록</title>
+  </head>
+  <style>
+    #container {
+      width: 375px;
+      min-height: 667px;
+      margin: 0px auto;
+      text-align: center;
+      background: white;
+      position: relative;
+      overflow: auto;
+      border: 1px solid black;
+      
+    }
+    #header{
+      background-color: black;
+    }
+    #logo {
+      width: 350px;
+      height: 81px;
+      flex-shrink: 0;
+      
+    }
+    #search{
+      width: 375px;
+      height: 40px;
+      display: flex;
+    }
+    #main{
+      width: 375px;
+      height: 560px;
+      background-color: black;
+      color:white;
+      display: flex;
+      flex-direction: column;
+     
+      align-items: center;
+    }
+    .searchList{
+      margin-top:3px;
+      margin-left:-1px;
+      margin-right:-2px;
+    }
+    .search-sport{
+      margin-top:3px;
+      
+    }
+    .search-area{
+      margin-top:3px;
+      
+    }
+    .search-gen{
+      margin-top:3px;
+      
+    }
+    .search-date{
+      margin-top:3px;
+     
+    }
+    .search-people{
+      margin-top:3px;
+     
+    }
+    .search-btn{
+      border:0;
+      width:60px;
+      border-radius: 15px;
+      margin-right:2px;
+      outline: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    .modal-sport{
+      position:absolute;
+      top:0;
+      left:0;
+      width:100px;
+      color :white;
+    }
+    
+    .board{
+      
+      width: 310px;
+      height: 165px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      border: 2px solid #FFF;
+      background: #000;
+      display: flex; 
+      flex-direction: column; 
+      align-items: flex-start; 
+    }
+
+  .board-title {
+      font-size: 20px;
+      text-align: left; 
+      margin-left: 10px; 
+      margin:10px;
+  }
+  
+
+  .board-sport {
+    margin-left: 10px;
+    font-size:13px;
+    float:left;
+    /* flex: 1; */
+  }
+
+  .board-date {
+    font-size:13px;
+    float:right;
+    /* flex: 1; */
+    text-align: right;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+    .board hr {
+      width: 100%; 
+      margin: 10px 0; 
+      border: none; 
+      border-top: 1px solid white; 
+    }
+    
+    .board-gender{
+      font-size:13px;
+      text-align: left;
+      margin-left: 10px; 
+      margin-bottom:3px;
+    }
+    
+    .board-area{
+      font-size:13px;
+      text-align: left;
+      margin-left: 10px; 
+      margin-bottom:3px;
+    }
+    .board-people{
+      font-size:13px;
+      text-align: left;
+      margin-left: 10px; 
+      margin-bottom:3px;
+    }
+    /* #footer_box {
+      width: 375px;
+      height: 97px;
+      box-sizing: border-box;
+      position: relative;
+      background: #ffffff;
+      border: 1px solid #d9d9d9;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding-top: 10px;
+      top: 24px;
+    } */
+
+
+  </style>
+  <body>
+    <div id="container">
+      <div id ="header">
+        <div id ="logo"> 
+            <img src="images\image 1.png">
+        </div> 
+      </div>
+      <div id ="search">
+        <div class="searchList"><button class="search-btn"><img src="images\searchlist.png"></button> </div>
+        
+        <div class="search-sport"><button class="search-btn"><img class="#" src="images/sportSearch.png"></button> </div>
+        
+        <div class="search-area"><button class="search-btn"><img class="#" src="images/areaSearch.png"></button> </div>
+        <div class="search-gen"><button class="search-btn"><img class="#" src="images/genderSearch.png"></button> </div>
+        <div class="search-date"><button class="search-btn"><img class="#" src="images/dateSearch.png"></button> </div>
+        <div class="search-people"><button class="search-btn"><img class="#" src="images/peopleSearch.png"></button> </div>
+      </div>
+      <div id="modal"> 
+        <div class="modal-list"></div>
+        <div class="modal-sport"> </div>
+        <div class="modal-area"> </div>
+        <div class="modal-date"> </div>
+        <div class="modal-people"> </div>
+      </div>
+      <div id="main">
+       <h4>글쓰기</h4>
+       
+          <div class="board">
+            <div class="board-title">3대 500 모집</div>
+            <div class="board-sport" >헬스</div>
+            <div class="board-date">2023-09-15</div>
+            <hr>
+            <div class="board-gender">여자만</div>
+            <div class="board-area">서울특별시 노원구</div>
+            <div class="board-people">2명</div>
+          </div>
+          <br>
+          <div class="board">
+            <div class="board-title">3대 500 모집</div>
+            <div class="board-sport">헬스</div>
+            <div class="board-date">2023-09-15</div>
+            <hr>
+            <div class="board-gender">여자만</div>
+            <div class="board-area">서울특별시 노원구</div>
+            <div class="board-people">2명</div>
+          </div>
+       
+      
+        </div>
+      </div>
+      <!-- <div id="footer_box">
+        <img id="link" src="./images/link.svg" />&nbsp;&nbsp;&nbsp;
+        <img id="talk" src="./images/talk.svg" />&nbsp;&nbsp;&nbsp;
+        <img id="main" src="./images/main.svg" />&nbsp;&nbsp;&nbsp;
+        <img id="note" src="./images/note.svg" />&nbsp;&nbsp;&nbsp;
+        <img id="my" src="./images/my.svg" />
+      </div> -->
+    </div>
+  </body>
+</html>

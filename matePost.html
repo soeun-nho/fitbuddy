@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #container {
+      width: 375px;
+      min-height: 667px;
+      margin: 0px auto;
+      text-align: center;
+      background: white;
+      position: relative;
+      overflow: auto;
+      border: 1px solid black;
+      
+    }
+    #header{
+      background-color: black;
+    }
+    #logo {
+      width: 350px;
+      height: 81px;
+      flex-shrink: 0;
+      
+    }
+    #search{
+      width: 390px;
+      height: 40px;
+      flex-shrink: 0;
+    }
+
+    .custom-select{
+      width: 280px;
+      height: 28px;
+      flex-shrink: 0;
+      border-radius: 20px;
+      border: 1px solid #000;
+      background: #FFF;
+    }
+    .custom-title{
+      width: 280px;
+      height: 60px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      border: 1px solid #000;
+      background: #FFF;
+    }
+   .custom-content{
+    width: 280px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #FFF;
+    
+   }
+   .detail-btn{
+    width: 150px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #C2AC18;
+   }
+  </style>
+  
+  <body>
+    
+    <div id="container">
+      <div id ="header">
+        <div id ="logo"> 
+            <img src="images\image 1.png">
+        </div> 
+      </div>
+     
+      <div id="main">
+        <form action="#">
+        <label for="spo">종목 </label>
+        <br>
+        <select name="sports" class="custom-select" id="spo">
+            <option value="헬스">헬스</option>
+            <option value="클라이밍">클라이밍</option>
+            <option value="골프">골프</option>
+            <option value="배드민턴">배드민턴</option>
+            <option value="축구">축구</option>
+            <option value="자전거">자전거</option>
+            <option value="런닝">런닝</option>
+            <option value="등산">등산</option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+        <br>
+        <label for="area">지역 </label>
+        <br>
+        <select name="areaSi" id="areaSi2" class="custom-select" ></select>
+        <br>
+        <select name="areaGu" id="areaGu2" class="custom-select" ></select>
+        <br>
+        <select name="areaDong" id="areaDong2" class="custom-select"></select>
+        <br>
+        <label for="gen">성별 </label>
+        <br>
+        <select name="gender" id="gen" class="custom-select">
+            <option value="여자">여자만</option>
+            <option value="남자">남자만</option>
+            <option value="">상관없다</option>
+        </select>
+        <br>
+        <label for="date" >날짜 <br>
+          <input class="custom-select"type="date"
+                 id="date"
+                 max="2077-06-20"
+                 min="2023-09-05"
+                 value="2023-09-15">
+        </label>
+        <br>
+        <label for="cnt" >인원 </label>
+        <br>
+        <select name="count" id="cnt" class="custom-select">
+            <option value="1">1명</option>
+            
+        </select>
+        <br>
+        <label for="title">제목</label>
+        <br>
+        <input type="text" name="title" id="title" class="custom-title">
+        <br>
+        <label for="content">내용</label>
+        <br>
+        <textarea  rows="5" id="content" class="custom-content" name="content" placeholder="내용 작성"></textarea>
+        <br>
+
+        <button class="detail-btn" type="submit" >작성하기</button>
+        </form>
+        
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
